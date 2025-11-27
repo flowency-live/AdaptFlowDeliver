@@ -1,0 +1,44 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- AFD Logo: Flow Progression -->
+  <!-- Concept: Three smooth flowing ribbons representing Adapt → Flow → Deliver -->
+
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0369a1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- First flowing ribbon (Adapt) -->
+  <path d="M 30 50 Q 50 35, 70 50 Q 90 65, 110 50"
+        stroke="url(#grad1)"
+        stroke-width="12"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.85"/>
+
+  <!-- Second flowing ribbon (Flow) -->
+  <path d="M 30 80 Q 50 65, 70 80 Q 90 95, 110 80"
+        stroke="url(#grad1)"
+        stroke-width="12"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.7"/>
+
+  <!-- Third flowing ribbon (Deliver) -->
+  <path d="M 30 110 Q 50 95, 70 110 Q 90 125, 110 110"
+        stroke="url(#grad2)"
+        stroke-width="12"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.9"/>
+
+  <!-- Connecting flow dots -->
+  <circle cx="115" cy="50" r="4" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="115" cy="80" r="4" fill="#0891b2" opacity="0.8"/>
+  <circle cx="115" cy="110" r="4" fill="#0369a1" opacity="0.95"/>
+</svg>
