@@ -119,6 +119,11 @@ export function CalEmbed({
 // Extend Window interface for Cal
 declare global {
   interface Window {
-    Cal?: any
+    Cal?: {
+      (action: string, ...args: unknown[]): void
+      ns: Record<string, (...args: unknown[]) => void>
+      loaded?: boolean
+      q?: unknown[]
+    }
   }
 }

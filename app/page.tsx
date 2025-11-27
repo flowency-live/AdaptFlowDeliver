@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { CalEmbed } from '@/components/CalEmbed'
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0">
-              <img src="/afd-logo.png" alt="Adapt Flow Deliver" className="h-16 w-auto" />
+              <Image src="/afd-logo.png" alt="Adapt Flow Deliver" width={64} height={64} className="h-16 w-auto" priority />
             </div>
 
             {/* Desktop Menu */}
