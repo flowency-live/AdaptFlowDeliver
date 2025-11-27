@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { CalEmbed } from '@/components/CalEmbed'
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -10,9 +11,9 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-[#0a0e1a]/95 backdrop-blur-sm border-b border-slate-700/50 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0">
-              <img src="/afd-logo.svg" alt="Adapt Flow Deliver" className="h-10 w-auto" />
+              <img src="/afd-logo.png" alt="Adapt Flow Deliver" className="h-16 w-auto" />
             </div>
 
             {/* Desktop Menu */}
@@ -78,32 +79,39 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-24 pb-20 bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-slate-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="mb-6">
-              <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 tracking-tight">
+      <section id="hero" className="pt-28 pb-32 md:pb-40 wave-background bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-slate-900 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 relative z-10">
+          <div className="text-center max-w-5xl mx-auto space-y-12">
+            <div className="space-y-6">
+              <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold">
+                Delivery Optimisation Experts
+              </p>
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-50 tracking-tight leading-none">
                 Adapt Flow Deliver
               </h1>
-              <p className="text-xl md:text-2xl text-primary-400 font-medium">
-                Consultancy Ltd
+            </div>
+
+            <div className="space-y-8">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-slate-200 font-light leading-relaxed max-w-4xl mx-auto">
+                End-to-end delivery. Capability uplift. Value with clarity.
+              </p>
+              <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                We help organisations design and embed simple, scalable and customer-centric delivery systems
               </p>
             </div>
 
-            <div className="mt-12 mb-12">
-              <p className="text-2xl md:text-3xl text-slate-300 font-light leading-relaxed">
-                End-to-end delivery. <br className="hidden md:block" />
-                Capability uplift. <br className="hidden md:block" />
-                Value with clarity.
-              </p>
-            </div>
-
-            <div className="mt-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
               <a
                 href="#contact"
-                className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-primary-500/20 hover:shadow-xl hover:shadow-primary-500/30"
+                className="inline-flex items-center justify-center bg-primary-500 hover:bg-primary-600 text-white font-semibold px-10 py-5 rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-primary-500/30 hover:shadow-xl hover:shadow-primary-500/40 text-lg"
               >
                 Get in Touch
+              </a>
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center border-2 border-primary-400 hover:border-primary-300 text-primary-400 hover:text-primary-300 font-semibold px-10 py-5 rounded-lg transition-all text-lg"
+              >
+                Our Services
               </a>
             </div>
           </div>
@@ -111,10 +119,15 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-slate-900/50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">About Us</h2>
+      <section id="about" className="py-32 md:py-40 bg-slate-900/50 wave-background relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+            <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
+              About Us
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-6 tracking-tight">
+              Who We Are
+            </h2>
             <div className="w-24 h-1 bg-primary-400 mx-auto mb-8"></div>
           </div>
 
@@ -157,11 +170,19 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-[#0a0e1a]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">What We Do</h2>
-            <div className="w-24 h-1 bg-primary-400 mx-auto"></div>
+      <section id="services" className="py-32 md:py-40 bg-[#0a0e1a] relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+            <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
+              Services
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-6 tracking-tight">
+              What We Do
+            </h2>
+            <div className="w-24 h-1 bg-primary-400 mx-auto mb-6"></div>
+            <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+              Supporting organisations through transformation, capability building and value delivery
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -238,10 +259,15 @@ export default function Home() {
       </section>
 
       {/* About Rebecca Section */}
-      <section id="rebecca" className="py-20 bg-slate-900/50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">About Rebecca Forrest</h2>
+      <section id="rebecca" className="py-32 md:py-40 bg-slate-900/50 wave-background relative">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+            <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
+              Founder
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-6 tracking-tight">
+              Rebecca Forrest
+            </h2>
             <div className="w-24 h-1 bg-primary-400 mx-auto mb-8"></div>
           </div>
 
@@ -256,7 +282,7 @@ export default function Home() {
               </p>
 
               <p>
-                Rebecca partners with <span className="font-semibold text-primary-400">Adaptavis</span> and <span className="font-semibold text-primary-400">Flowency</span> on large-scale transformation, capability-building and flow-maturity programmes, working with organisations who want clearer delivery, stronger alignment and more predictable value outcomes.
+                Rebecca partners with <a href="https://www.adaptavis.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary-400 hover:text-primary-300 transition-colors underline decoration-primary-400/30 hover:decoration-primary-300">Adaptavis</a> and <a href="https://www.flowency.co.uk" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary-400 hover:text-primary-300 transition-colors underline decoration-primary-400/30 hover:decoration-primary-300">Flowency</a> on large-scale transformation, capability-building and flow-maturity programmes, working with organisations who want clearer delivery, stronger alignment and more predictable value outcomes.
               </p>
 
               <p>
@@ -297,14 +323,17 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-[#0a0e1a]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
+      <section id="contact" className="py-32 md:py-40 bg-[#0a0e1a] wave-background relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+            <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
+              Get in Touch
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-6 tracking-tight">
               Let&apos;s Talk
             </h2>
             <div className="w-24 h-1 bg-primary-400 mx-auto mb-8"></div>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
               Ready to simplify delivery, build capability, and create lasting value? Get in touch to discuss how we can help.
             </p>
           </div>
@@ -378,20 +407,19 @@ export default function Home() {
               </form>
             </div>
 
-            {/* Cal.com Embed Placeholder */}
+            {/* Cal.com Embed */}
             <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-lg border border-secondary-500/20">
               <h3 className="text-2xl font-bold text-slate-100 mb-6">Book a Call</h3>
-              <div className="bg-slate-900/50 p-8 rounded-lg border border-primary-500/20 min-h-[500px] flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="text-6xl mb-4">📅</div>
-                  <p className="text-lg text-slate-200 font-semibold">Calendar Booking</p>
-                  <p className="text-sm text-slate-400">
-                    Cal.com integration will be configured here
-                  </p>
-                  <p className="text-xs text-slate-500 italic">
-                    (Rebecca: Please provide your Cal.com booking link)
-                  </p>
-                </div>
+              <div className="bg-slate-900/50 rounded-lg border border-primary-500/20" style={{ minHeight: '600px' }}>
+                <CalEmbed
+                  calLink="forrestrg"
+                  namespace="afd-booking"
+                  config={{
+                    theme: 'dark',
+                    layout: 'month_view',
+                    hideEventTypeDetails: false
+                  }}
+                />
               </div>
             </div>
           </div>
