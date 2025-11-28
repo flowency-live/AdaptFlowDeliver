@@ -93,7 +93,12 @@ export default function Home() {
             </div>
 
             <div className="space-y-8">
-              <p className="text-2xl md:text-3xl lg:text-4xl text-slate-200 font-light leading-relaxed max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-primary-500/20 via-primary-400/10 to-secondary-500/20 p-8 rounded-2xl border border-primary-400/30 backdrop-blur-sm max-w-4xl mx-auto">
+                <p className="text-2xl md:text-3xl lg:text-4xl text-slate-100 font-semibold leading-relaxed">
+                  We amplify what already works inside your business and remove what slows you down
+                </p>
+              </div>
+              <p className="text-xl md:text-2xl text-slate-300 font-light leading-relaxed max-w-4xl mx-auto">
                 End-to-end delivery. Capability uplift. Value with clarity.
               </p>
               <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
