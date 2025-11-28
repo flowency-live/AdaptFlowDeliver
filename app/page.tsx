@@ -83,27 +83,27 @@ export default function Home() {
       <section id="hero" className="pt-28 pb-32 md:pb-40 wave-background bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-slate-900 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 relative z-10">
           <div className="text-center max-w-5xl mx-auto space-y-12">
-            <div className="space-y-6">
-              <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold">
-                Delivery Optimisation Experts
-              </p>
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-50 tracking-tight leading-none">
-                Adapt Flow Deliver
-              </h1>
-            </div>
-
             <div className="space-y-8">
-              <div className="bg-gradient-to-r from-primary-500/20 via-primary-400/10 to-secondary-500/20 p-8 rounded-2xl border border-primary-400/30 backdrop-blur-sm max-w-4xl mx-auto">
-                <p className="text-2xl md:text-3xl lg:text-4xl text-slate-100 font-semibold leading-relaxed">
-                  We amplify what already works inside your business and remove what slows you down
+              <div className="space-y-6">
+                <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold">
+                  Delivery Optimisation Experts
+                </p>
+                <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-50 tracking-tight leading-none">
+                  Adapt Flow Deliver
+                </h1>
+                <p className="text-xl md:text-2xl lg:text-3xl text-primary-300 font-medium leading-relaxed max-w-4xl mx-auto pt-4">
+                  We amplify what works and remove what slows you down
                 </p>
               </div>
-              <p className="text-xl md:text-2xl text-slate-300 font-light leading-relaxed max-w-4xl mx-auto">
-                End-to-end delivery. Capability uplift. Value with clarity.
-              </p>
-              <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-                We help organisations design and embed simple, scalable and customer-centric delivery systems
-              </p>
+
+              <div className="space-y-6">
+                <p className="text-lg md:text-xl lg:text-2xl text-slate-300 font-light leading-relaxed max-w-4xl mx-auto">
+                  End-to-end delivery. Capability uplift. Value with clarity.
+                </p>
+                <p className="text-base md:text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                  We help organisations design and embed simple, scalable and customer-centric delivery systems
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
