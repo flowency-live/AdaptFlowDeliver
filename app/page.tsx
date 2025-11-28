@@ -264,8 +264,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* People Development Section */}
+      <section className="py-32 md:py-40 bg-slate-900/50 wave-background relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
+              At the Heart of Everything
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-6 tracking-tight">
+              People Development
+            </h2>
+            <div className="w-24 h-1 bg-primary-400 mx-auto mb-8"></div>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            <p className="text-xl md:text-2xl text-slate-200 leading-relaxed text-center">
+              Empowering individuals and teams through continuous learning, skill growth, and leadership development to drive lasting organisational capability.
+            </p>
+
+            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-10 rounded-2xl border border-primary-500/20 space-y-6">
+              <p className="text-lg text-slate-300 leading-relaxed">
+                We believe capability is built through people, not processes. Our coaching and development approach focuses on progressive skill growth, building confidence, and creating environments where teams can continuously learn and adapt.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 pt-4">
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <span className="text-primary-400 mr-3 text-xl">→</span>
+                    <span className="text-slate-300">Leadership coaching and capability building</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-primary-400 mr-3 text-xl">→</span>
+                    <span className="text-slate-300">Team development and continuous learning</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-primary-400 mr-3 text-xl">→</span>
+                    <span className="text-slate-300">Kanban and flow-based delivery training</span>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <span className="text-primary-400 mr-3 text-xl">→</span>
+                    <span className="text-slate-300">Operating model and delivery practice uplift</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-primary-400 mr-3 text-xl">→</span>
+                    <span className="text-slate-300">Building confidence through clarity and coaching</span>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-primary-400 mr-3 text-xl">→</span>
+                    <span className="text-slate-300">Creating sustainable learning cultures</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-lg text-slate-300 leading-relaxed italic pt-4 border-t border-slate-700/50">
+                We amplify what already works in your teams and remove the barriers that prevent them from growing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Rebecca Section */}
-      <section id="rebecca" className="py-32 md:py-40 bg-slate-900/50 wave-background relative">
+      <section id="rebecca" className="py-32 md:py-40 bg-[#0a0e1a] wave-background relative">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
