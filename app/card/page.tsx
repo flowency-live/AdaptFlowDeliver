@@ -20,7 +20,7 @@ ORG:Adapt Flow Deliver Consultancy Ltd
 TITLE:Founder - Delivery Transformation Lead
 EMAIL:rebecca@adaptflowdeliver.com
 URL:https://adaptflowdeliver.com
-TEL;TYPE=WORK,VOICE:+44 (0) 7123 456789
+TEL;TYPE=WORK,VOICE:+44 7766 770455
 NOTE:Delivery transformation specialist. We amplify what works and remove what slows you down.
 END:VCARD`
 
@@ -102,7 +102,7 @@ END:VCARD`
               </a>
 
               <a
-                href="https://www.linkedin.com/in/rebeccaforrest"
+                href="https://www.linkedin.com/in/rebecca-forrest-a084742b"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-slate-300 hover:text-primary-400 transition-colors group"
@@ -115,6 +115,21 @@ END:VCARD`
                 <div>
                   <p className="text-xs text-slate-500">LinkedIn</p>
                   <p className="text-sm font-medium">Rebecca Forrest</p>
+                </div>
+              </a>
+
+              <a
+                href="tel:+447766770455"
+                className="flex items-center gap-3 text-slate-300 hover:text-primary-400 transition-colors group"
+              >
+                <div className="w-10 h-10 rounded-full bg-primary-500/20 flex items-center justify-center group-hover:bg-primary-500/30 transition-colors">
+                  <svg className="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs text-slate-500">Phone</p>
+                  <p className="text-sm font-medium">+44 7766 770455</p>
                 </div>
               </a>
             </div>
