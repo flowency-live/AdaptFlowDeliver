@@ -23,6 +23,7 @@ export default function HomeV4() {
               <a href="/v2" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V2</a>
               <a href="/v3" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V3</a>
               <a href="/v4" className="text-primary-400 font-semibold text-sm">V4</a>
+              <a href="/v5" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V5</a>
               <span className="text-slate-600">|</span>
               <a href="#about" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">About</a>
               <a href="#services" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">Services</a>
@@ -55,6 +56,7 @@ export default function HomeV4() {
                   <a href="/v2" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V2</a>
                   <a href="/v3" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V3</a>
                   <a href="/v4" className="text-primary-400 font-semibold text-sm">V4</a>
+                  <a href="/v5" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V5</a>
                 </div>
                 <a
                   href="#about"
