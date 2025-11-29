@@ -89,7 +89,7 @@ export default function HomeV3() {
       </nav>
 
       {/* Hero Section - Primary Gradient with strong geometric accents */}
-      <section id="hero" className="pt-28 pb-32 md:pb-40 bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-primary-950 relative overflow-hidden border-b-2 border-primary-500/30">
+      <section id="hero" className="pt-28 pb-32 md:pb-40 bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-primary-950 relative overflow-hidden border-b-4 border-primary-500/50">
         {/* Geometric accent elements */}
         <div className="absolute top-20 right-10 w-64 h-64 bg-primary-500/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary-500/15 rounded-full blur-3xl"></div>
@@ -137,8 +137,8 @@ export default function HomeV3() {
         </div>
       </section>
 
-      {/* About Section - Darker contrast */}
-      <section id="about" className="py-32 md:py-40 bg-slate-950 relative border-b border-slate-800">
+      {/* About Section - MUCH LIGHTER for high contrast */}
+      <section id="about" className="py-32 md:py-40 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 relative border-b-4 border-primary-500/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -191,8 +191,8 @@ export default function HomeV3() {
         </div>
       </section>
 
-      {/* Services Section - Medium slate with secondary accent */}
-      <section id="services" className="py-32 md:py-40 bg-gradient-to-br from-slate-900 via-slate-900 to-secondary-950 relative overflow-hidden border-b border-secondary-500/20">
+      {/* Services Section - VERY DARK for high contrast */}
+      <section id="services" className="py-32 md:py-40 bg-gradient-to-br from-[#020305] via-[#050810] to-[#020305] relative overflow-hidden border-b-4 border-secondary-500/60">
         {/* Secondary accent elements */}
         <div className="absolute top-40 left-10 w-72 h-72 bg-secondary-500/15 rounded-full blur-3xl"></div>
 
@@ -212,7 +212,7 @@ export default function HomeV3() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-primary-500/30 hover:border-primary-400/60 hover:shadow-lg hover:shadow-primary-500/20 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-lg border-2 border-primary-500/40 hover:border-primary-400/80 hover:shadow-xl hover:shadow-primary-500/30 transition-all">
               <div className="text-primary-400 text-3xl font-bold mb-4">01</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Strategy → Operating Model Alignment
@@ -223,7 +223,7 @@ export default function HomeV3() {
             </div>
 
             {/* Service 2 */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-secondary-500/30 hover:border-secondary-400/60 hover:shadow-lg hover:shadow-secondary-500/20 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-lg border-2 border-secondary-500/40 hover:border-secondary-400/80 hover:shadow-xl hover:shadow-secondary-500/30 transition-all">
               <div className="text-secondary-400 text-3xl font-bold mb-4">02</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 End-to-End Delivery Transformation
@@ -234,7 +234,7 @@ export default function HomeV3() {
             </div>
 
             {/* Service 3 */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-primary-500/30 hover:border-primary-400/60 hover:shadow-lg hover:shadow-primary-500/20 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-lg border-2 border-primary-500/40 hover:border-primary-400/80 hover:shadow-xl hover:shadow-primary-500/30 transition-all">
               <div className="text-primary-400 text-3xl font-bold mb-4">03</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Capability Uplift Across Teams & Leadership
@@ -248,7 +248,7 @@ export default function HomeV3() {
             </div>
 
             {/* Service 4 */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-secondary-500/30 hover:border-secondary-400/60 hover:shadow-lg hover:shadow-secondary-500/20 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-lg border-2 border-secondary-500/40 hover:border-secondary-400/80 hover:shadow-xl hover:shadow-secondary-500/30 transition-all">
               <div className="text-secondary-400 text-3xl font-bold mb-4">04</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Customer-Centric Ways of Working
@@ -259,7 +259,7 @@ export default function HomeV3() {
             </div>
 
             {/* Service 5 */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-primary-500/30 hover:border-primary-400/60 hover:shadow-lg hover:shadow-primary-500/20 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-lg border-2 border-primary-500/40 hover:border-primary-400/80 hover:shadow-xl hover:shadow-primary-500/30 transition-all">
               <div className="text-primary-400 text-3xl font-bold mb-4">05</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Flow, Data & Insight-Driven Delivery
@@ -270,7 +270,7 @@ export default function HomeV3() {
             </div>
 
             {/* Service 6 */}
-            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-secondary-500/30 hover:border-secondary-400/60 hover:shadow-lg hover:shadow-secondary-500/20 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-lg border-2 border-secondary-500/40 hover:border-secondary-400/80 hover:shadow-xl hover:shadow-secondary-500/30 transition-all">
               <div className="text-secondary-400 text-3xl font-bold mb-4">06</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Collaboration & Cross-Team Alignment
@@ -283,8 +283,8 @@ export default function HomeV3() {
         </div>
       </section>
 
-      {/* People Development Section - Very dark with primary accents */}
-      <section className="py-32 md:py-40 bg-[#050810] relative border-b-2 border-primary-500/30">
+      {/* People Development Section - LIGHTER with strong primary tint */}
+      <section className="py-32 md:py-40 bg-gradient-to-br from-slate-800 via-primary-950/60 to-slate-800 relative border-b-4 border-primary-500/60">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -345,8 +345,8 @@ export default function HomeV3() {
         </div>
       </section>
 
-      {/* About Rebecca Section - Warmer gradient with primary/secondary mix */}
-      <section id="rebecca" className="py-32 md:py-40 bg-gradient-to-br from-slate-900 via-primary-950 to-slate-900 relative overflow-hidden border-b border-slate-800">
+      {/* About Rebecca Section - VERY DARK with strong accents */}
+      <section id="rebecca" className="py-32 md:py-40 bg-gradient-to-br from-[#020305] via-[#0a0520] to-[#020305] relative overflow-hidden border-b-4 border-primary-500/60">
         {/* Mixed accent elements */}
         <div className="absolute top-10 right-20 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-20 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl"></div>
@@ -425,8 +425,8 @@ export default function HomeV3() {
         </div>
       </section>
 
-      {/* Contact Section - Deep navy with strong secondary accents */}
-      <section id="contact" className="py-32 md:py-40 bg-gradient-to-br from-slate-950 via-[#050810] to-secondary-950 relative overflow-hidden border-b border-secondary-500/20">
+      {/* Contact Section - LIGHTER with secondary tint for final contrast */}
+      <section id="contact" className="py-32 md:py-40 bg-gradient-to-br from-slate-700 via-secondary-900 to-slate-800 relative overflow-hidden border-b-4 border-secondary-500/60">
         <div className="absolute top-1/3 right-10 w-96 h-96 bg-secondary-500/15 rounded-full blur-3xl"></div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

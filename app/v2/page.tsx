@@ -8,9 +8,9 @@ export default function HomeV2() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-[#0a0e1a]">
+    <div className="min-h-screen bg-[#0a0e1a] relative">
       {/* Fixed Persistent Background */}
-      <div className="fixed inset-0 wave-background-fixed pointer-events-none" style={{ zIndex: 0 }} />
+      <div className="fixed inset-0 wave-background-fixed pointer-events-none" />
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-[#0a0e1a]/95 backdrop-blur-sm border-b border-slate-700/50 z-50">
@@ -92,7 +92,7 @@ export default function HomeV2() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-28 pb-32 md:pb-40 bg-gradient-to-br from-slate-900/80 via-[#0a0e1a]/80 to-slate-900/80 relative" style={{ zIndex: 1 }}>
+      <section id="hero" className="pt-28 pb-32 md:pb-40 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 relative z-10">
           <div className="text-center max-w-5xl mx-auto space-y-12">
             <div className="space-y-8">
@@ -137,7 +137,7 @@ export default function HomeV2() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 md:py-40 bg-slate-900/60 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
+      <section id="about" className="py-32 md:py-40 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -191,7 +191,7 @@ export default function HomeV2() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-32 md:py-40 bg-[#0a0e1a]/80 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
+      <section id="services" className="py-32 md:py-40 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -280,7 +280,7 @@ export default function HomeV2() {
       </section>
 
       {/* People Development Section */}
-      <section className="py-32 md:py-40 bg-slate-900/60 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
+      <section className="py-32 md:py-40 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -342,7 +342,7 @@ export default function HomeV2() {
       </section>
 
       {/* About Rebecca Section */}
-      <section id="rebecca" className="py-32 md:py-40 bg-[#0a0e1a]/80 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
+      <section id="rebecca" className="py-32 md:py-40 relative">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -418,7 +418,7 @@ export default function HomeV2() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 md:py-40 bg-slate-900/60 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
+      <section id="contact" className="py-32 md:py-40 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -522,7 +522,7 @@ export default function HomeV2() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 py-8" style={{ zIndex: 1, position: 'relative' }}>
+      <footer className="bg-slate-950/80 backdrop-blur-sm border-t border-slate-800 text-slate-400 py-8 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm">
