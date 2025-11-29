@@ -92,16 +92,16 @@ export default function Home() {
                   Adapt Flow Deliver
                 </h1>
                 <p className="text-xl md:text-2xl lg:text-3xl text-primary-300 font-medium leading-relaxed max-w-4xl mx-auto pt-4">
-                  We amplify what works and remove what slows you down
+                  We strengthen what works — and streamline what slows you down.
                 </p>
               </div>
 
               <div className="space-y-6">
                 <p className="text-lg md:text-xl lg:text-2xl text-slate-300 font-light leading-relaxed max-w-4xl mx-auto">
-                  End-to-end delivery. Capability uplift. Value with clarity.
+                  End-to-end delivery. Capability uplift. Clear, scalable ways of working.
                 </p>
                 <p className="text-base md:text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
-                  We help organisations design and embed simple, scalable and customer-centric delivery systems
+                  We help organisations design and embed simple, scalable, customer-centric delivery systems.
                 </p>
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function Home() {
             </p>
 
             <p>
-              We support leaders and teams in moving from complex, reactive ways of working to clear, predictable and value-focused operating models.
+              We support leaders and teams as they shift from complex, reactive ways of working to clear, predictable and value-focused operating models.
             </p>
 
             <div className="bg-slate-800/50 p-8 rounded-lg shadow-sm border border-primary-500/20 my-8">
@@ -169,7 +169,10 @@ export default function Home() {
             </p>
 
             <p className="text-center text-slate-400 italic pt-4">
-              Founded by Rebecca Forrest, we work globally across financial services, engineering, data, product and digital organisations.
+              Founded by Rebecca Forrest, we work globally across aviation, financial services, global energy, engineering, data, product, digital and publishing organisations.
+            </p>
+            <p className="text-center text-slate-400 italic">
+              Across the UK, Europe, the Middle East and Asia Pacific.
             </p>
           </div>
         </div>
@@ -362,11 +365,19 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-3">
                   <div className="flex items-center">
                     <span className="text-primary-400 mr-2">•</span>
-                    <span>Aviation engineering</span>
+                    <span>Aviation</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-primary-400 mr-2">•</span>
                     <span>Financial services</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-primary-400 mr-2">•</span>
+                    <span>Global energy</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-primary-400 mr-2">•</span>
+                    <span>Engineering</span>
                   </div>
                   <div className="flex items-center">
                     <span className="text-primary-400 mr-2">•</span>
@@ -378,11 +389,15 @@ export default function Home() {
                   </div>
                   <div className="flex items-center">
                     <span className="text-primary-400 mr-2">•</span>
-                    <span>Digital engineering</span>
+                    <span>Digital</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-primary-400 mr-2">•</span>
+                    <span>Publishing</span>
                   </div>
                 </div>
                 <p className="mt-4 text-slate-400">
-                  Across the UK, Europe and the Middle East.
+                  Across the UK, Europe, the Middle East and Asia Pacific.
                 </p>
               </div>
             </div>
