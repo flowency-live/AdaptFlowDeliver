@@ -92,7 +92,7 @@ export default function Home() {
                   Adapt Flow Deliver
                 </h1>
                 <p className="text-xl md:text-2xl lg:text-3xl text-primary-300 font-medium leading-relaxed max-w-4xl mx-auto pt-4">
-                  We strengthen what works — and streamline what slows you down.
+                  We strengthen what works - and streamline what slows you down.
                 </p>
               </div>
 
@@ -165,7 +165,7 @@ export default function Home() {
             </div>
 
             <p>
-              We blend strategy, operating model design and modern delivery practices to uplift capability across the entire organisation — from leadership through to teams on the ground.
+              We blend strategy, operating model design and modern delivery practices to uplift capability across the entire organisation - from leadership through to teams on the ground.
             </p>
 
             <p className="text-center text-slate-400 italic pt-4">
@@ -224,7 +224,7 @@ export default function Home() {
                 Capability Uplift Across Teams & Leadership
               </h3>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Building capability is at the heart of everything we do — skills, mindset, clarity, confidence and alignment.
+                Building capability is at the heart of everything we do - skills, mindset, clarity, confidence and alignment.
               </p>
               <p className="text-sm text-slate-400 italic">
                 (Kanban and flow-based delivery are areas of specialist expertise.)
@@ -249,7 +249,7 @@ export default function Home() {
                 Flow, Data & Insight-Driven Delivery
               </h3>
               <p className="text-slate-300 leading-relaxed">
-                Translating data into visibility: cycle time, throughput, blockers, risks, forecasting — explained in plain English so leaders can make better decisions.
+                Translating data into visibility: cycle time, throughput, blockers, risks, forecasting - explained in plain English so leaders can make better decisions.
               </p>
             </div>
 
