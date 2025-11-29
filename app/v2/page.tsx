@@ -4,11 +4,14 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { CalEmbed } from '@/components/CalEmbed'
 
-export default function Home() {
+export default function HomeV2() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <div className="min-h-screen bg-[#0a0e1a]">
+      {/* Fixed Persistent Background */}
+      <div className="fixed inset-0 wave-background-fixed pointer-events-none" style={{ zIndex: 0 }} />
+
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-[#0a0e1a]/95 backdrop-blur-sm border-b border-slate-700/50 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,8 +22,8 @@ export default function Home() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              <a href="/" className="text-primary-400 font-semibold text-sm">V1</a>
-              <a href="/v2" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V2</a>
+              <a href="/" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V1</a>
+              <a href="/v2" className="text-primary-400 font-semibold text-sm">V2</a>
               <a href="/v3" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V3</a>
               <span className="text-slate-600">|</span>
               <a href="#about" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">About</a>
@@ -50,8 +53,8 @@ export default function Home() {
             <div className="md:hidden py-4 border-t border-slate-700/50">
               <div className="flex flex-col space-y-3">
                 <div className="flex gap-3 px-4 pb-3 border-b border-slate-700/50">
-                  <a href="/" className="text-primary-400 font-semibold text-sm">V1</a>
-                  <a href="/v2" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V2</a>
+                  <a href="/" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V1</a>
+                  <a href="/v2" className="text-primary-400 font-semibold text-sm">V2</a>
                   <a href="/v3" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V3</a>
                 </div>
                 <a
@@ -89,7 +92,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-28 pb-32 md:pb-40 wave-background bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-slate-900 relative">
+      <section id="hero" className="pt-28 pb-32 md:pb-40 bg-gradient-to-br from-slate-900/80 via-[#0a0e1a]/80 to-slate-900/80 relative" style={{ zIndex: 1 }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 relative z-10">
           <div className="text-center max-w-5xl mx-auto space-y-12">
             <div className="space-y-8">
@@ -134,7 +137,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-32 md:py-40 bg-slate-900/50 wave-background relative">
+      <section id="about" className="py-32 md:py-40 bg-slate-900/60 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -188,7 +191,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-32 md:py-40 bg-[#0a0e1a] relative">
+      <section id="services" className="py-32 md:py-40 bg-[#0a0e1a]/80 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -277,7 +280,7 @@ export default function Home() {
       </section>
 
       {/* People Development Section */}
-      <section className="py-32 md:py-40 bg-slate-900/50 wave-background relative">
+      <section className="py-32 md:py-40 bg-slate-900/60 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -339,7 +342,7 @@ export default function Home() {
       </section>
 
       {/* About Rebecca Section */}
-      <section id="rebecca" className="py-32 md:py-40 bg-[#0a0e1a] wave-background relative">
+      <section id="rebecca" className="py-32 md:py-40 bg-[#0a0e1a]/80 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -415,7 +418,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-32 md:py-40 bg-[#0a0e1a] wave-background relative">
+      <section id="contact" className="py-32 md:py-40 bg-slate-900/60 backdrop-blur-sm relative" style={{ zIndex: 1 }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -519,7 +522,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 py-8">
+      <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 py-8" style={{ zIndex: 1, position: 'relative' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm">

@@ -90,3 +90,45 @@ html {
     transform: translate(20px, -20px) rotate(5deg);
   }
 }
+
+/* Fixed persistent background for V2 */
+.wave-background-fixed {
+  position: fixed;
+  inset: 0;
+}
+
+.wave-background-fixed::before {
+  content: '';
+  position: absolute;
+  top: -25%;
+  right: -10%;
+  width: 80%;
+  height: 150%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(8, 145, 178, 0.15) 0%,
+    rgba(8, 145, 178, 0.08) 40%,
+    transparent 70%
+  );
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  animation: wave-float 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.wave-background-fixed::after {
+  content: '';
+  position: absolute;
+  bottom: -15%;
+  left: -10%;
+  width: 70%;
+  height: 120%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(34, 211, 238, 0.12) 0%,
+    rgba(34, 211, 238, 0.06) 40%,
+    transparent 70%
+  );
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: wave-float-reverse 25s ease-in-out infinite;
+  pointer-events: none;
+}

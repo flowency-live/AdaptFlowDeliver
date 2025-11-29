@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { CalEmbed } from '@/components/CalEmbed'
 
-export default function Home() {
+export default function HomeV3() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -19,9 +19,9 @@ export default function Home() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              <a href="/" className="text-primary-400 font-semibold text-sm">V1</a>
+              <a href="/" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V1</a>
               <a href="/v2" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V2</a>
-              <a href="/v3" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V3</a>
+              <a href="/v3" className="text-primary-400 font-semibold text-sm">V3</a>
               <span className="text-slate-600">|</span>
               <a href="#about" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">About</a>
               <a href="#services" className="text-slate-300 hover:text-primary-400 transition-colors font-medium">Services</a>
@@ -50,9 +50,9 @@ export default function Home() {
             <div className="md:hidden py-4 border-t border-slate-700/50">
               <div className="flex flex-col space-y-3">
                 <div className="flex gap-3 px-4 pb-3 border-b border-slate-700/50">
-                  <a href="/" className="text-primary-400 font-semibold text-sm">V1</a>
+                  <a href="/" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V1</a>
                   <a href="/v2" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V2</a>
-                  <a href="/v3" className="text-slate-400 hover:text-primary-400 transition-colors font-medium text-sm">V3</a>
+                  <a href="/v3" className="text-primary-400 font-semibold text-sm">V3</a>
                 </div>
                 <a
                   href="#about"
@@ -88,8 +88,12 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section id="hero" className="pt-28 pb-32 md:pb-40 wave-background bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-slate-900 relative">
+      {/* Hero Section - Primary Gradient with strong geometric accents */}
+      <section id="hero" className="pt-28 pb-32 md:pb-40 bg-gradient-to-br from-slate-900 via-[#0a0e1a] to-primary-950 relative overflow-hidden border-b-2 border-primary-500/30">
+        {/* Geometric accent elements */}
+        <div className="absolute top-20 right-10 w-64 h-64 bg-primary-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary-500/15 rounded-full blur-3xl"></div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-48 relative z-10">
           <div className="text-center max-w-5xl mx-auto space-y-12">
             <div className="space-y-8">
@@ -133,8 +137,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-32 md:py-40 bg-slate-900/50 wave-background relative">
+      {/* About Section - Darker contrast */}
+      <section id="about" className="py-32 md:py-40 bg-slate-950 relative border-b border-slate-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -155,7 +159,7 @@ export default function Home() {
               We support leaders and teams as they shift from complex, reactive ways of working to clear, predictable and value-focused operating models.
             </p>
 
-            <div className="bg-slate-800/50 p-8 rounded-lg shadow-sm border border-primary-500/20 my-8">
+            <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 p-8 rounded-lg shadow-sm border border-primary-500/30 my-8">
               <p className="text-xl font-semibold text-slate-100 mb-6">Our belief is straightforward:</p>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -187,17 +191,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-32 md:py-40 bg-[#0a0e1a] relative">
+      {/* Services Section - Medium slate with secondary accent */}
+      <section id="services" className="py-32 md:py-40 bg-gradient-to-br from-slate-900 via-slate-900 to-secondary-950 relative overflow-hidden border-b border-secondary-500/20">
+        {/* Secondary accent elements */}
+        <div className="absolute top-40 left-10 w-72 h-72 bg-secondary-500/15 rounded-full blur-3xl"></div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
-            <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
+            <p className="text-sm md:text-base text-secondary-300 uppercase tracking-wider font-semibold mb-4">
               Services
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-6 tracking-tight">
               What We Do
             </h2>
-            <div className="w-24 h-1 bg-primary-400 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-secondary-400 mx-auto mb-6"></div>
             <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
               Supporting organisations through transformation, capability building and value delivery
             </p>
@@ -205,7 +212,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-lg border border-primary-500/20 hover:border-primary-400/50 hover:shadow-lg hover:shadow-primary-500/10 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-primary-500/30 hover:border-primary-400/60 hover:shadow-lg hover:shadow-primary-500/20 transition-all">
               <div className="text-primary-400 text-3xl font-bold mb-4">01</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Strategy → Operating Model Alignment
@@ -216,7 +223,7 @@ export default function Home() {
             </div>
 
             {/* Service 2 */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-lg border border-secondary-500/20 hover:border-secondary-400/50 hover:shadow-lg hover:shadow-secondary-500/10 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-secondary-500/30 hover:border-secondary-400/60 hover:shadow-lg hover:shadow-secondary-500/20 transition-all">
               <div className="text-secondary-400 text-3xl font-bold mb-4">02</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 End-to-End Delivery Transformation
@@ -227,7 +234,7 @@ export default function Home() {
             </div>
 
             {/* Service 3 */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-lg border border-primary-500/20 hover:border-primary-400/50 hover:shadow-lg hover:shadow-primary-500/10 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-primary-500/30 hover:border-primary-400/60 hover:shadow-lg hover:shadow-primary-500/20 transition-all">
               <div className="text-primary-400 text-3xl font-bold mb-4">03</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Capability Uplift Across Teams & Leadership
@@ -241,7 +248,7 @@ export default function Home() {
             </div>
 
             {/* Service 4 */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-lg border border-secondary-500/20 hover:border-secondary-400/50 hover:shadow-lg hover:shadow-secondary-500/10 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-secondary-500/30 hover:border-secondary-400/60 hover:shadow-lg hover:shadow-secondary-500/20 transition-all">
               <div className="text-secondary-400 text-3xl font-bold mb-4">04</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Customer-Centric Ways of Working
@@ -252,7 +259,7 @@ export default function Home() {
             </div>
 
             {/* Service 5 */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-lg border border-primary-500/20 hover:border-primary-400/50 hover:shadow-lg hover:shadow-primary-500/10 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-primary-500/30 hover:border-primary-400/60 hover:shadow-lg hover:shadow-primary-500/20 transition-all">
               <div className="text-primary-400 text-3xl font-bold mb-4">05</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Flow, Data & Insight-Driven Delivery
@@ -263,7 +270,7 @@ export default function Home() {
             </div>
 
             {/* Service 6 */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-lg border border-secondary-500/20 hover:border-secondary-400/50 hover:shadow-lg hover:shadow-secondary-500/10 transition-all">
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-secondary-500/30 hover:border-secondary-400/60 hover:shadow-lg hover:shadow-secondary-500/20 transition-all">
               <div className="text-secondary-400 text-3xl font-bold mb-4">06</div>
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Collaboration & Cross-Team Alignment
@@ -276,8 +283,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* People Development Section */}
-      <section className="py-32 md:py-40 bg-slate-900/50 wave-background relative">
+      {/* People Development Section - Very dark with primary accents */}
+      <section className="py-32 md:py-40 bg-[#050810] relative border-b-2 border-primary-500/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -294,7 +301,7 @@ export default function Home() {
               Empowering individuals and teams through continuous learning, skill growth, and leadership development to drive lasting organisational capability.
             </p>
 
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-10 rounded-2xl border border-primary-500/20 space-y-6">
+            <div className="bg-gradient-to-br from-primary-950/40 to-slate-900/60 p-10 rounded-2xl border-2 border-primary-500/30 space-y-6">
               <p className="text-lg text-slate-300 leading-relaxed">
                 We believe capability is built through people, not processes. Our coaching and development approach focuses on progressive skill growth, building confidence, and creating environments where teams can continuously learn and adapt.
               </p>
@@ -330,7 +337,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <p className="text-lg text-slate-300 leading-relaxed italic pt-4 border-t border-slate-700/50">
+              <p className="text-lg text-slate-300 leading-relaxed italic pt-4 border-t border-primary-500/30">
                 We amplify what already works in your teams and remove the barriers that prevent them from growing.
               </p>
             </div>
@@ -338,8 +345,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Rebecca Section */}
-      <section id="rebecca" className="py-32 md:py-40 bg-[#0a0e1a] wave-background relative">
+      {/* About Rebecca Section - Warmer gradient with primary/secondary mix */}
+      <section id="rebecca" className="py-32 md:py-40 bg-gradient-to-br from-slate-900 via-primary-950 to-slate-900 relative overflow-hidden border-b border-slate-800">
+        {/* Mixed accent elements */}
+        <div className="absolute top-10 right-20 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl"></div>
+
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
@@ -351,7 +362,7 @@ export default function Home() {
             <div className="w-24 h-1 bg-primary-400 mx-auto mb-8"></div>
           </div>
 
-          <div className="bg-slate-800/50 p-8 md:p-12 rounded-lg shadow-sm border border-primary-500/20">
+          <div className="bg-slate-800/70 p-8 md:p-12 rounded-lg shadow-sm border border-primary-500/30">
             <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
               <p>
                 Rebecca is a delivery transformation lead who specialises in simplifying complex delivery environments, uplifting capability, and helping organisations become more customer-centric and value-focused.
@@ -369,7 +380,7 @@ export default function Home() {
                 She has deep expertise in flow-based delivery and Kanban, but her real strength is bringing <span className="font-semibold text-slate-100">clarity, calm and capability uplift</span> to organisations navigating complexity.
               </p>
 
-              <div className="bg-gradient-to-r from-primary-500/10 to-secondary-500/10 p-6 rounded-lg mt-8 border border-primary-500/20">
+              <div className="bg-gradient-to-r from-primary-500/20 to-secondary-500/20 p-6 rounded-lg mt-8 border border-primary-500/30">
                 <p className="font-semibold text-slate-100 mb-3">Her work spans:</p>
                 <div className="grid md:grid-cols-2 gap-3">
                   <div className="flex items-center">
@@ -414,17 +425,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-32 md:py-40 bg-[#0a0e1a] wave-background relative">
+      {/* Contact Section - Deep navy with strong secondary accents */}
+      <section id="contact" className="py-32 md:py-40 bg-gradient-to-br from-slate-950 via-[#050810] to-secondary-950 relative overflow-hidden border-b border-secondary-500/20">
+        <div className="absolute top-1/3 right-10 w-96 h-96 bg-secondary-500/15 rounded-full blur-3xl"></div>
+
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
-            <p className="text-sm md:text-base text-primary-300 uppercase tracking-wider font-semibold mb-4">
+            <p className="text-sm md:text-base text-secondary-300 uppercase tracking-wider font-semibold mb-4">
               Get in Touch
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-100 mb-6 tracking-tight">
               Let&apos;s Talk
             </h2>
-            <div className="w-24 h-1 bg-primary-400 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-secondary-400 mx-auto mb-8"></div>
             <p className="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
               Ready to simplify delivery, build capability, and create lasting value? Get in touch to discuss how we can help.
             </p>
@@ -432,7 +445,7 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Contact Form */}
-            <div className="bg-slate-800/50 p-8 rounded-lg border border-primary-500/20">
+            <div className="bg-slate-800/60 p-8 rounded-lg border border-secondary-500/30">
               <h3 className="text-2xl font-bold text-slate-100 mb-6">Send a Message</h3>
               <form className="space-y-4">
                 <div>
@@ -444,7 +457,7 @@ export default function Home() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-slate-900/50 border border-slate-700 text-slate-100 placeholder-slate-500 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20 transition-all"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-900/80 border border-slate-700 text-slate-100 placeholder-slate-500 focus:border-secondary-400 focus:outline-none focus:ring-2 focus:ring-secondary-500/20 transition-all"
                     placeholder="Your name"
                   />
                 </div>
@@ -458,7 +471,7 @@ export default function Home() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-slate-900/50 border border-slate-700 text-slate-100 placeholder-slate-500 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20 transition-all"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-900/80 border border-slate-700 text-slate-100 placeholder-slate-500 focus:border-secondary-400 focus:outline-none focus:ring-2 focus:ring-secondary-500/20 transition-all"
                     placeholder="your.email@company.com"
                   />
                 </div>
@@ -471,7 +484,7 @@ export default function Home() {
                     type="text"
                     id="company"
                     name="company"
-                    className="w-full px-4 py-3 rounded-lg bg-slate-900/50 border border-slate-700 text-slate-100 placeholder-slate-500 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20 transition-all"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-900/80 border border-slate-700 text-slate-100 placeholder-slate-500 focus:border-secondary-400 focus:outline-none focus:ring-2 focus:ring-secondary-500/20 transition-all"
                     placeholder="Your organisation (optional)"
                   />
                 </div>
@@ -485,14 +498,14 @@ export default function Home() {
                     name="message"
                     required
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg bg-slate-900/50 border border-slate-700 text-slate-100 placeholder-slate-500 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500/20 transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-slate-900/80 border border-slate-700 text-slate-100 placeholder-slate-500 focus:border-secondary-400 focus:outline-none focus:ring-2 focus:ring-secondary-500/20 transition-all resize-none"
                     placeholder="Tell us about your delivery challenges and what you're looking to achieve..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-primary-500/20 hover:shadow-xl hover:shadow-primary-500/30"
+                  className="w-full bg-secondary-500 hover:bg-secondary-600 text-white font-semibold px-6 py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-secondary-500/20 hover:shadow-xl hover:shadow-secondary-500/30"
                 >
                   Send Message
                 </button>
@@ -500,9 +513,9 @@ export default function Home() {
             </div>
 
             {/* Cal.com Embed */}
-            <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-lg border border-secondary-500/20">
+            <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 p-8 rounded-lg border border-secondary-500/30">
               <h3 className="text-2xl font-bold text-slate-100 mb-6">Book a Call</h3>
-              <div className="bg-slate-900/50 rounded-lg border border-primary-500/20" style={{ minHeight: '600px' }}>
+              <div className="bg-slate-900/80 rounded-lg border border-secondary-500/30" style={{ minHeight: '600px' }}>
                 <CalEmbed
                   calLink="forrestrg"
                   namespace="afd-booking"
